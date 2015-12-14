@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -15,10 +15,9 @@
 	<script>
 		var canva = document.getElementById("canvas1");
 		var canv = canva.getContext("2d");
-
 		var x1=20;
 		var y1=10;
-		var variant=7;
+		var variant=24;
 		var x2=20+variant;
 		var y2=100;
 		
@@ -30,7 +29,6 @@
 		if (length == 0) {
 			canv.fillRect(x1, y1, 1, 1);
 		}
-
 		if (lengthY <= lengthX) {
 			// Начальные значения
 			var x = x1;
@@ -64,7 +62,6 @@
 				}
 			}
 		}
-
 	</script>
 	<h2>
 		Задание 2. Дан массив х-координат границ многоугольника (задается в коде, например, arr[10, 14, 15, 20, 25]); 
@@ -76,7 +73,6 @@
 	<script>
 		var canva = document.getElementById("canvas2");
 		var canv = canva.getContext("2d");
-
 		var array=[		[10, 30, 51, 60, 101],
 						[10, 11, 12, 13, 14,15,16,17,18,19,20, 30, 51, 80,101]
 					];
@@ -101,14 +97,12 @@ for (var row=0; row<array.length; row++) {
 				while (array[row][nn] % 2 == 0)
 				{
 					nn++;
-
 				}
 				for (var j = array[row][i]; j<=array[row][nn]; j++)
 				{
 					canv.fillRect(j, row, 1, 1);
 				}
 			}
-
 		}
 	}
 	</script>
